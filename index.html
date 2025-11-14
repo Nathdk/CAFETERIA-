@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sistema de Pedidos - Mesero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="meseros.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Sistema de Pedidos</h1>
+        <p class="subtitle">Interfaz de Mesero</p>
+
+        <div class="mesa-section">
+            <div class="mesa-row">
+                <label for="meseroNum">Mesero:</label>
+                <input type="number" id="meseroNum" min="1" placeholder="101" inputmode="numeric">
+            </div>
+            
+            <div class="mesa-row">
+                <label for="mesaNum">Mesa:</label>
+                <input type="number" id="mesaNum" min="1" placeholder="1" inputmode="numeric">
+            </div>
+        </div>
+
+        <div class="stations">
+            <!-- CAFETERÍA -->
+            <div class="station cafeteria">
+                <h2>☕ CAFETERÍA</h2>
+                
+                <div class="category">
+                    <h3>Café Caliente</h3>
+                    <div class="items">
+                        <button class="item-btn">Americano ☕</button>
+                        <button class="item-btn">Latte ☕</button>
+                        <button class="item-btn">Cappuccino ☕</button>
+                        <button class="item-btn">Moka ☕</button>
+                        <button class="item-btn">Espresso ☕</button>
+                        <button class="item-btn">Matcha Latte 🍵</button>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3>Café Frío</h3>
+                    <div class="items">
+                        <button class="item-btn">Frappé 🥤</button>
+                        <button class="item-btn">Cold Brew 🧊</button>
+                        <button class="item-btn">Iced Latte 🧊</button>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3>Panadería</h3>
+                    <div class="items">
+                        <button class="item-btn">Croissant 🥐</button>
+                        <button class="item-btn">Dona Chocolate 🍩</button>
+                        <button class="item-btn">Muffin Arándano 🫐</button>
+                        <button class="item-btn">Galleta Chispas 🍪</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COCINA -->
+            <div class="station cocina">
+                <h2>🍳 COCINA</h2>
+                
+                <div class="category">
+                    <h3>Bebidas</h3>
+                    <div class="items">
+                        <button class="item-btn">Limonada 🍋</button>
+                        <button class="item-btn">Naranjada 🍊</button>
+                        <button class="item-btn">Agua Jamaica 🌺</button>
+                        <button class="item-btn">Horchata 🥛</button>
+                        <button class="item-btn">Coca-Cola 🥤</button>
+                        <button class="item-btn">Agua 💧</button>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3>Desayunos</h3>
+                    <div class="items">
+                        <button class="item-btn">Chilaquiles 🌶️</button>
+                        <button class="item-btn">Huevos al Gusto 🍳</button>
+                        <button class="item-btn">Omelette 🥚</button>
+                        <button class="item-btn">Hot Cakes (3) 🥞</button>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3>Comidas</h3>
+                    <div class="items">
+                        <button class="item-btn">Hamburguesa 🍔</button>
+                        <button class="item-btn">Sándwich Club 🥪</button>
+                        <button class="item-btn">Ensalada César 🥗</button>
+                        <button class="item-btn">Sopa Azteca 🍲</button>
+                        <button class="item-btn">Tacos Pastor (3) 🌮</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPOSTERÍA -->
+            <div class="station reposteria">
+                <h2>🍰 REPOSTERÍA</h2>
+                
+                <div class="category">
+                    <h3>Postres</h3>
+                    <div class="items">
+                        <button class="item-btn">Pastel Zanahoria 🥕</button>
+                        <button class="item-btn">Cheesecake Fresa 🍓</button>
+                        <button class="item-btn">Beso de Angel 👼</button>
+                        <button class="item-btn">Pastel Chocolate 🍫</button>
+                        <button class="item-btn">Flan Napolitano 🍮</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>📋 Resumen del Pedido</h2>
+            <div class="order-list" id="orderList">
+                <p style="text-align: center; color: #888; margin-top: 15px; font-size: 0.9em;">
+                    Este es un ejemplo de cómo se verán los pedidos
+                </p>
+            </div>
+            <div class="action-buttons">
+                <button class="send-btn">Enviar Pedido 🚀</button>
+                <button class="clear-btn">Limpiar 🗑️</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification">✅ Ejemplo de notificación</div>
+</body>
+</html>
